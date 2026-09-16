@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Yunus Seyhan",
+    "position": "Postgraduate Student",
+    "rating": 5,
+    "ratingValue": "5.0",
+    "quote": "We make sure you have a fine distance with the sickness. We make you never lose hope. We make sure you have with the sickness.",
+    "image": "./assets/images/testimonial.svg"
+  },
+  {
+    "id": 2,
+    "name": "Yunus Seyhan",
+    "position": "Postgraduate Student",
+    "rating": 5,
+    "ratingValue": "5.0",
+    "quote": "We make sure you have a fine distance with the sickness. We make you never lose hope. We make sure you have with the sickness.",
+    "image": "./assets/images/testimonial-02.svg"
+  },
+  {
+    "id": 3,
+    "name": "Yunus Seyhan",
+    "position": "Postgraduate Student",
+    "rating": 5,
+    "ratingValue": "5.0",
+    "quote": "We make sure you have a fine distance with the sickness. We make you never lose hope. We make sure you have with the sickness.",
+    "image": "./assets/images/testimonial-03.svg"
+  }
+]

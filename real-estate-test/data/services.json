@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Bed Rooms",
+    "description": "Desktop publishing software like aldus page maker including",
+    "icon": "bed"
+  },
+  {
+    "id": 2,
+    "title": "Swimming pool",
+    "description": "React creative agency amet, consec tetur adipiscing elit.",
+    "icon": "pool"
+  },
+  {
+    "id": 3,
+    "title": "Copywriting content",
+    "description": "The standard chunk of used since the 1500s is reproduced",
+    "icon": "copy"
+  },
+  {
+    "id": 4,
+    "title": "Smart Home",
+    "description": "The standard chunk of used since the 1500s is reproduced",
+    "icon": "smart"
+  },
+  {
+    "id": 5,
+    "title": "Libarary area",
+    "description": "Desktop publishing software like aldus page maker including",
+    "icon": "library"
+  },
+  {
+    "id": 6,
+    "title": "Responsive Duity",
+    "description": "React creative agency amet, consec tetur adipiscing elit.",
+    "icon": "responsive"
+  }
+]

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="38" viewBox="0 0 135 38">
+  <style>
+    .logo-text {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      fill: #071C1F;
+    }
+  </style>
+  <!-- Orange Arc around R -->
+  <path d="M 29 8.5 A 13.5 13.5 0 1 0 29 28.5" fill="none" stroke="#FF5A3C" stroke-width="3.8" stroke-linecap="round"/>
+  
+  <!-- Text: Reanty. -->
+  <text x="12" y="25.5" class="logo-text">R<tspan dx="1.5">eanty</tspan><tspan fill="#FF5A3C">.</tspan></text>
+</svg>

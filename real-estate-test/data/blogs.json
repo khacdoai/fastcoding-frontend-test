@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "category": "Rentals",
+    "date": "3 years ago",
+    "readTime": "3 min read",
+    "title": "How to rent a home very easily?",
+    "description": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+    "image": "./assets/images/blog-01.svg"
+  },
+  {
+    "id": 2,
+    "category": "Rentals",
+    "date": "3 years ago",
+    "readTime": "5 min read",
+    "title": "How to rent a home very easily?",
+    "description": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+    "image": "./assets/images/blog-02.svg"
+  },
+  {
+    "id": 3,
+    "category": "Rentals",
+    "date": "3 years ago",
+    "readTime": "4 min read",
+    "title": "How to rent a home very easily?",
+    "description": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+    "image": "./assets/images/blog-03.svg"
+  }
+]

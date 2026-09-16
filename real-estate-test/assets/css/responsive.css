@@ -1,0 +1,892 @@
+/* ==========================================
+   RESPONSIVE.CSS — Reanty Real Estate
+   Media queries for all breakpoints
+   ========================================== */
+
+/* ==========================================
+   LARGE DESKTOP — 1440px
+   ========================================== */
+
+@media (max-width: 1440px) {
+  :root {
+    --container-max-width: 1200px;
+  }
+}
+
+/* ==========================================
+   DESKTOP — 1280px
+   ========================================== */
+
+@media (max-width: 1280px) {
+  :root {
+    --section-padding-y: 4.5rem;
+  }
+
+  .hero__title {
+    font-size: 2.75rem;
+  }
+
+  .footer__top {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1.3fr;
+    gap: var(--space-6);
+  }
+}
+
+/* ==========================================
+   TABLET LARGE — 1024px
+   ========================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-padding-y: 4rem;
+    --header-height: 64px;
+  }
+
+  /* Header */
+  .header__nav {
+    display: none;
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+
+  .header__mobile-nav {
+    display: block;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: calc(var(--header-height) + 0.5rem);
+  }
+  .hero__content {
+    padding-top: 1rem !important;
+  }
+
+
+  .hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    min-height: 420px;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  /* Commercial */
+  .commercial__grid {
+    gap: var(--space-5);
+  }
+
+  /* Dream Living */
+  .dream-living__inner {
+    gap: var(--space-10);
+  }
+
+  .dream-living__image-secondary {
+    right: -1rem;
+    bottom: -1rem;
+  }
+
+  /* Today Sells */
+  /* Reduce gap between Today Sells and Services section */
+  .today-sells {
+    padding: 2.5rem 0 1.5rem 0 !important;
+  }
+
+  .services {
+    padding: 1.5rem 0 2.5rem 0 !important;
+  }
+
+  .services .section-header {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .today-sells__inner {
+    gap: var(--space-10);
+  }
+
+  /* Services */
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Featured */
+  .featured-property__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonial */
+  .testimonial-card {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-8);
+  }
+
+  /* Projects */
+  .projects__inner {
+    gap: var(--space-10);
+  }
+
+  /* Blog */
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact__inner {
+    gap: var(--space-10);
+  }
+
+  /* Footer */
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ==========================================
+   TABLET — 768px
+   ========================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 2rem;
+    --font-size-3xl: 1.6rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 1.5rem;
+  }
+
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: auto;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__visual {
+    order: 2;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .hero__slider-nav {
+    order: 3;
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 2.15rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero__curly-arrow {
+    display: none;
+  }
+
+  .hero__description {
+    max-width: 480px;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero__actions {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__visual {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+
+  .hero__price-card {
+    left: 0;
+    bottom: -15px;
+    padding: 0.8rem 1rem;
+    min-width: 140px;
+  }
+
+  /* Commercial & Services */
+  .commercial,
+  .services,
+  .dream-living,
+  .featured-property,
+  .today-sells,
+  .testimonials,
+  .projects,
+  .blog,
+  .contact {
+    padding: 2rem 0 !important;
+  }
+
+  .commercial__header,
+  .services__header,
+  .testimonials__header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .featured-property__header {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials__header {
+    margin-bottom: 2rem;
+  }
+
+  .commercial__grid,
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .commercial__grid .guide-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* Compact horizontal layout for guide-card on mobile */
+  .guide-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    text-align: left;
+  }
+
+  .guide-card__icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    margin: 0;
+  }
+
+  .guide-card__icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .guide-card__title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .guide-card__desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Compact horizontal layout for service-card on mobile */
+  .service-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    text-align: left;
+  }
+
+  .service-card__icon-box {
+    min-width: 52px;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 0;
+    background-color: #fff3f1;
+    border-radius: 12px;
+    padding: 0.4rem;
+  }
+
+  .service-card__icon-box img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .service-card__title {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .service-card__desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+  }
+
+  .service-card__link {
+    font-size: 0.8rem;
+  }
+
+  /* Body wrapper for horizontal card layout */
+  .service-card__body {
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Wrap guide-card content left aligned */
+  .guide-card__body {
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Dream Living */
+  .dream-living__inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .dream-living__images {
+    max-width: 100%;
+    height: 380px;
+    margin-top: 0;
+  }
+
+  .dream-living__box-bg {
+    width: 240px;
+    height: 320px;
+    right: 10px;
+    top: 20px;
+  }
+
+  .dream-living__box-fg {
+    width: 260px;
+    height: 330px;
+  }
+
+  .dream-living__rating-badge {
+    width: 70px;
+    height: 70px;
+    right: 5px;
+  }
+
+  .dream-living__content {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .dream-living__features {
+    text-align: left;
+  }
+
+  /* Today Sells */
+  .today-sells__inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .today-sells__images {
+    max-width: 100%;
+    height: 260px;
+  }
+
+  /* Map section */
+  .map-section__bg {
+    height: 300px;
+  }
+
+  .map-popup {
+    width: 260px;
+    left: 50%;
+    top: 45%;
+    padding: 0.75rem 0.9rem;
+    gap: 0.75rem;
+    border-radius: 16px;
+  }
+
+  .map-popup__image-wrap {
+    width: 76px;
+    height: 68px;
+    border-radius: 11px;
+  }
+
+  .map-popup__price {
+    font-size: 1.1rem;
+  }
+
+  .map-popup__address {
+    font-size: 0.78rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .map-popup__features {
+    gap: 0.4rem;
+  }
+
+  .map-popup__feature {
+    font-size: 0.72rem;
+    padding: 2px 7px 2px 5px;
+    gap: 0.2rem;
+  }
+
+  .map-popup__feature svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  /* Unit badge — thu nhỏ, dịch sang trái */
+  .map-unit-badge {
+    left: 8%;
+    right: auto;
+    bottom: -38px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .map-unit-badge__label {
+    font-size: 0.45rem;
+    letter-spacing: 0.5px;
+  }
+
+  .map-unit-badge__number {
+    font-size: 1.15rem;
+  }
+
+  /* Contact section */
+  .contact__body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__left {
+    padding-right: 0;
+  }
+
+  .contact__visual {
+    display: none;
+  }
+
+  .contact__list {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__form-card {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Featured Property */
+  .featured-property__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .featured-property__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .featured-property__tabs {
+    justify-content: center;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .testimonial-card__image-wrapper {
+    width: 280px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .testimonial-card__image-bg,
+  .testimonial-card__image-box {
+    width: 260px;
+    height: 300px;
+  }
+
+  .star-rating {
+    justify-content: center;
+  }
+
+  .testimonials__arrow--prev {
+    left: -5px;
+  }
+
+  .testimonials__arrow--next {
+    right: -5px;
+  }
+
+  /* Projects */
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projects__subscribe-wrap {
+    padding: 1.5rem;
+  }
+
+  .projects__subscribe-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .projects__subscribe-btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer__main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer__brand-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer__right-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer__bottom-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   MOBILE LARGE — 480px
+   ========================================== */
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding-y: 2rem;
+    --container-padding: 0.875rem;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: 1.85rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__price-card {
+    left: 0;
+    transform: none;
+    bottom: -15px;
+    padding: 0.75rem 0.9rem;
+    min-width: 135px;
+    border-radius: 14px;
+  }
+
+  .hero__price-card-img {
+    width: 28px;
+  }
+
+  .hero__price-card-amount {
+    font-size: 1.05rem;
+  }
+
+  .hero__price-card-label {
+    font-size: 0.7rem;
+  }
+
+  .hero__image-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Commercial */
+  .commercial__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commercial__grid .guide-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* Services */
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Featured Property */
+  .featured-property__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-property__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .featured-property__tabs {
+    flex-wrap: wrap;
+  }
+
+  /* Projects stats */
+  .projects__stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* Blog */
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Subscribe form */
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  /* Footer - full single column on small mobile */
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .footer__brand-col,
+  .footer__right-col {
+    grid-column: auto;
+  }
+
+  .footer__bottom-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  /* Contact section small mobile */
+  .contact__body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact__form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Map section small mobile */
+  .map-popup {
+    width: 220px;
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .map-popup__image-wrap {
+    width: 70px;
+    height: 65px;
+  }
+
+  /* Today sells image grid */
+  .today-sells__images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .today-sells__image--large {
+    grid-row: auto;
+    aspect-ratio: 1;
+  }
+}
+
+/* ==========================================
+   MOBILE — 390px / 375px
+   ========================================== */
+
+@media (max-width: 390px) {
+  :root {
+    --container-padding: 0.875rem;
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  /* Footer on small mobile */
+  .footer__main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__brand-col,
+  .footer__right-col {
+    grid-column: auto;
+  }
+
+  .footer__bottom-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   MOBILE SMALL — 360px
+   ========================================== */
+
+@media (max-width: 360px) {
+  :root {
+    --container-padding: 0.75rem;
+  }
+
+  .hero__title {
+    font-size: 1.625rem;
+  }
+
+  .btn {
+    padding: 0.625rem 1.25rem;
+  }
+
+  .testimonials__controls {
+    gap: var(--space-3);
+  }
+
+  .testimonials__arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact__form-wrapper {
+    padding: var(--space-6);
+  }
+}
+
+/* ==========================================
+   PRICE BANNER — RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  .price-banner {
+    padding: 3.5rem 0;
+  }
+
+  .price-banner__badge {
+    position: static;
+    transform: none;
+    width: fit-content;
+    margin-bottom: var(--space-4);
+  }
+
+  .price-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-5);
+  }
+}
+
+/* ==========================================
+   SCROLL TOP — RESPONSIVE
+   ========================================== */
+
+@media (max-width: 480px) {
+  .scroll-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ==========================================
+   PREVENT HORIZONTAL OVERFLOW
+   ========================================== */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero__deco {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .dream-living__image-secondary {
+    right: 0;
+    bottom: -1rem;
+    border: 3px solid var(--white);
+  }
+
+  .today-sells__images {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================
+   MOBILE FOOTER OPTIMIZATIONS
+   ========================================== */
+@media (max-width: 768px) {
+  .footer { padding: 2rem 0 1.25rem 0 !important; }
+  .footer__main { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 1rem 0.5rem !important; padding-bottom: 1rem !important; }
+  .footer__brand-col { grid-column: 1 / -1 !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 0.5rem !important; margin-bottom: 0.25rem !important; }
+  .footer__logo { margin-bottom: 0 !important; }
+  .footer__brand-text { display: none !important; }
+  .footer__socials { gap: 0.5rem !important; }
+  .footer__social-box { width: 28px !important; height: 28px !important; font-size: 0.75rem !important; }
+  .footer__col-title { font-size: 0.82rem !important; margin-bottom: 0.5rem !important; font-weight: 700 !important; }
+  .footer__link-list { gap: 0.35rem !important; }
+  .footer__link-list a { font-size: 0.75rem !important; }
+  .footer__right-col { grid-column: 1 / -1 !important; border-top: 1px solid rgba(255, 255, 255, 0.08) !important; padding-top: 1rem !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 1rem !important; }
+  .footer__office-text { font-size: 0.72rem !important; line-height: 1.35 !important; }
+  .footer__subscribe-box { margin-top: 0.25rem !important; }
+  .footer__subscribe-input { font-size: 0.75rem !important; }
+  .footer__bottom-bar { display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; align-items: center !important; gap: 0.4rem 1.25rem !important; padding-top: 0.85rem !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; text-align: center !important; }
+  .footer__bottom-link { font-size: 0.78rem !important; }
+  .footer__copyright-text { width: 100% !important; font-size: 0.7rem !important; margin-top: 0.2rem !important; }
+}
+@media (max-width: 420px) {
+  .footer__right-col { grid-template-columns: 1fr !important; gap: 0.85rem !important; }
+}
